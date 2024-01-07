@@ -36,7 +36,6 @@ namespace TimeTrap.Gameplay.Controller
         {
             if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0))
             {
-                FindObjectOfType<AudioManager>().PlayAudio(SoundEnum.SFX_Click);
                 if (Input.GetMouseButtonDown(0))
                 {
                     ClickObject();
@@ -60,8 +59,9 @@ namespace TimeTrap.Gameplay.Controller
                 if (rayHit.collider == null) return;
                 if (rayHit.collider.CompareTag("ClickPuzzle"))
                 {
-                    var rayHitObject = rayHit.collider.GetComponent<IClickable>();
-                    rayHitObject.OnClicked();
+                    var rayHitInterface = rayHit.collider.GetComponent<IClickable>();
+                    if (rayHitInterface.IsCorrect()) return;
+                    rayHitInterface.OnClicked();
                 }
             }
         }
@@ -78,8 +78,9 @@ namespace TimeTrap.Gameplay.Controller
                 if (rayHit.collider == null) return;
                 if (rayHit.collider.CompareTag("HoldPuzzle"))
                 {
-                    var rayHitObject = rayHit.collider.GetComponent<IHoldable>();
-                    rayHitObject.OnHolded();
+                    var rayHitInterface = rayHit.collider.GetComponent<IHoldable>();
+                    if (rayHitInterface.IsCorrect()) return;
+                    rayHitInterface.OnHolded();
                 }
             }
         }

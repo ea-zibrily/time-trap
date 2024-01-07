@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using KevinCastejon.MoreAttributes;
 using TimeTrap.Gameplay.EventHandler;
+using TimeTrap.Puzzle;
 
 namespace TimeTrap.Gameplay.Controller
 {
@@ -15,29 +16,21 @@ namespace TimeTrap.Gameplay.Controller
         [Tooltip("Isi variable ini dengan total waktu dalam jumlah detik")]
         [SerializeField] private int amountOfTime;
         [SerializeField, ReadOnly] private float currentTime;
-        [SerializeField] private bool isTimerStart;
         
+        public bool IsTimerStart { get; set; }
         public float CurrentTime { get => currentTime; }
         
         [Header("User Interface")]
         [SerializeField] private TextMeshProUGUI timerTextUI;
 
-        [Header("Reference")] 
-        private GameEventHandler _gameEventHandler;
-
         #endregion
 
         #region MonoBehaviour Callbacks
 
-        private void Awake()
-        {
-            _gameEventHandler = gameObject.AddComponent<GameEventHandler>();
-        }
-
         private void Start()
         {
             currentTime = amountOfTime;
-            timerTextUI.text = "00:00";
+            timerTextUI.text = "02:00";
         }
 
         private void Update()
@@ -52,7 +45,7 @@ namespace TimeTrap.Gameplay.Controller
 
         private void CountdownTimer()
         {
-            if (!isTimerStart)
+            if (!IsTimerStart)
             {
                 return;
             }
@@ -62,8 +55,12 @@ namespace TimeTrap.Gameplay.Controller
             if (currentTime <= 0f)
             {
                 currentTime = 0;
-                isTimerStart = false;
-                _gameEventHandler.GameOverEvent();
+                IsTimerStart = false;
+                
+                if (PuzzleDataHandler.Instance.FragmentPuzzleCheck())
+                    GameEventHandler.GameWinEvent();
+                else
+                    GameEventHandler.GameLoseEvent();
             }
         }
         

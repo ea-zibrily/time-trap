@@ -4,6 +4,8 @@ using UnityEngine;
 using MoreMountains.Feedbacks;
 using TimeTrap.Gameplay.EventHandler;
 using TimeTrap.DesignPattern.Singleton;
+using TimeTrap.Gameplay.Controller;
+using UnityEngine.Serialization;
 
 namespace TimeTrap.Managers
 {
@@ -12,11 +14,18 @@ namespace TimeTrap.Managers
         #region Variable
 
         [Header("Feedbacks")] 
-        public MMFeedbacks GameOverFeedbacks;
-        public MMFeedbacks TimeLimitFeedbacks;
-        
-        [Header("Game Over")] 
+        public MMFeedbacks GameWinFeedbacks;
+        public MMFeedbacks GameLoseFeedbacks;
+
+        [Header("Component")] 
+        [SerializeField] private float delayTime;
+        [SerializeField] private GameObject gameWinPanel;
         [SerializeField] private GameObject gameOverPanel;
+
+        private bool isWin;
+        
+        [Header("Reference")] 
+        [SerializeField] private TimeController _timeController;
 
         #endregion
 
@@ -25,13 +34,29 @@ namespace TimeTrap.Managers
         private void OnEnable()
         {
             GameEventHandler.OnGameStart += GameStart;
-            GameEventHandler.OnGameOver += GameOver;
+            GameEventHandler.OnGameWin += GameWin;
+            GameEventHandler.OnGameLose += GameLose;
         }
 
         private void OnDisable()
         {
             GameEventHandler.OnGameStart -= GameStart;
-            GameEventHandler.OnGameOver -= GameOver;
+            GameEventHandler.OnGameWin -= GameWin;
+            GameEventHandler.OnGameLose -= GameLose;
+        }
+
+        private void Start()
+        {
+            InitalizePlayerPrefs();
+            var isWinning = PlayerPrefs.GetString("Over");
+            if (isWinning == "Win")
+            {
+                StartCoroutine(GameWinRoutine());
+            }
+            else
+            {
+                StartCoroutine(GameLoseRoutine());
+            }
         }
 
         #endregion
@@ -41,12 +66,48 @@ namespace TimeTrap.Managers
         // Subscribe Event
         private void GameStart()
         {
-            
+            _timeController.IsTimerStart = true;
+        }
+        
+        private void GameWin() => StartCoroutine(GameWinEnumerator());
+        private void GameLose() => StartCoroutine(GameLoseEnumerator());
+
+        private IEnumerator GameWinEnumerator()
+        {
+            // GameLoseFeedbacks?.PlayFeedbacks();
+            _timeController.IsTimerStart = false;
+            PlayerPrefs.SetString("Over", "Win");
+            yield return null;
+        }
+        
+        private IEnumerator GameLoseEnumerator()
+        {
+            // GameWinFeedbacks?.PlayFeedbacks();
+            _timeController.IsTimerStart = false;
+            PlayerPrefs.SetString("Over", "Lose");
+            yield return null;
         }
 
-        private IEnumerator GameOver()
+        private IEnumerator GameWinRoutine()
         {
-            yield return null;
+            gameWinPanel.SetActive(true);
+            yield return new WaitForSeconds(3f);
+            gameWinPanel.SetActive(false);
+        }
+        
+        private IEnumerator GameLoseRoutine()
+        {
+            gameOverPanel.SetActive(true);
+            yield return new WaitForSeconds(3f);
+            gameOverPanel.SetActive(false);
+        }
+
+        private void InitalizePlayerPrefs()
+        {
+            if (!PlayerPrefs.HasKey("Over"))
+            {
+                PlayerPrefs.SetString("Over", "Lose");
+            }
         }
 
         #endregion

@@ -9,13 +9,17 @@ namespace TimeTrap.Gameplay.EventHandler
         public delegate void GameStart();
         public static event GameStart OnGameStart;
 
-        public delegate IEnumerator GameOver();
-        public static event GameOver OnGameOver;
+        public delegate void GameWin();
+        public static event GameWin OnGameWin;
+
+        public delegate void GameLose();
+        public static event GameLose OnGameLose;
 
         #region Tsukuyomi Callbacks
 
         public static void GameStartEvent() => OnGameStart?.Invoke();
-        public void GameOverEvent() => StartCoroutine(OnGameOver?.Invoke());
+        public static void GameWinEvent() => OnGameWin?.Invoke();
+        public static void GameLoseEvent() => OnGameLose?.Invoke();
 
         #endregion
     }

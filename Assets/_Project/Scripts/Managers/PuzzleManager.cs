@@ -1,17 +1,18 @@
 ﻿using System;
 using UnityEngine;
+using TimeTrap.Enum;
 using TimeTrap.Puzzle;
 using TimeTrap.DesignPattern.Singleton;
 
 namespace TimeTrap.Managers
 {
     [AddComponentMenu("TimeTrap/Managers/PuzzleManager")]
-    public class PuzzleManager : MonoDDOL<PuzzleManager>
+    public class PuzzleManager : MonoSingleton<PuzzleManager>
     {
         #region Variable
-
-        [Header("Puzzle Data")] 
-        public bool[] IsFragmentInstall;
+        
+        [Header("Interface")] 
+        [SerializeField] private GameObject[] timeIndicatorUI;
         
         #endregion
 
@@ -19,26 +20,36 @@ namespace TimeTrap.Managers
 
         private void Start()
         {
-            InitializeFragmentData();
+            SetDefaultIndicator();
         }
-        
+
         #endregion
-        
+
         #region Tsukuyomi Callbacks
-        
-        private void InitializeFragmentData()
+
+        private void SetDefaultIndicator()
         {
-            if (IsFragmentInstall != null) return;
-            IsFragmentInstall = new bool[4];
-            
-            for (var i = 0; i < IsFragmentInstall.Length; i++)
+            foreach (var indicatorUI in timeIndicatorUI)
             {
-                IsFragmentInstall[i] = true;
+                indicatorUI.SetActive(false);
             }
         }
-        
-        public void SetFragmentData(int index, bool value) => IsFragmentInstall[index - 1] = value;
-        
+
+        public void SetIndicatorTime(TimeIndicator indicator)
+        {
+            var indicatorIndex = indicator switch
+            {
+                TimeIndicator.Morning => 0,
+                TimeIndicator.Night => 1,
+                _ => throw new NotImplementedException()
+            };
+            
+            for (int i = 0; i < timeIndicatorUI.Length; i++)
+            {
+                timeIndicatorUI[i].SetActive(i == indicatorIndex);
+            }
+        }
+
         #endregion
     }
 }

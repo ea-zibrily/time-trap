@@ -7,16 +7,26 @@ using UnityEngine;
 namespace TimeTrap.Managers
 {
     [AddComponentMenu("TimeTrap/Managers/AudioManager")]
-    public class AudioManager : MonoDDOL<AudioManager>
+    public class AudioManager : MonoBehaviour
     {
         public Sound[] sounds;
+        public static AudioManager Instance;
 
         #region MonoBehaviour Callbacks
 
-        public override void InitComponent()
+        private void Awake()
         {
-            base.InitComponent();
-            Debug.Log("Init Audio Manager on Awake!");
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+                return;
+            }
+            
+            DontDestroyOnLoad(gameObject);
             
             foreach (var s in sounds)
             {

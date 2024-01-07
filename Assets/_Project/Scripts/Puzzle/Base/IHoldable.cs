@@ -3,5 +3,6 @@
     public interface IHoldable
     {
         public void OnHolded();
+        public bool IsCorrect();
     }
 }

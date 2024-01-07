@@ -27,10 +27,16 @@ namespace TimeTrap.Managers
 
         #region Tsukuyomi Callbacks
         
-        public void LoadAnotherScene()
+        public void LoadCurrentScene()
         {
             FindObjectOfType<AudioManager>().PlayAudio(SoundEnum.SFX_Click);
             OpenCurrentScene();
+        }
+
+        public void LoadNextScene()
+        {
+            FindObjectOfType<AudioManager>().PlayAudio(SoundEnum.SFX_Click);
+            OpenNextScene();
         }
         
         private void StartFader()
@@ -50,11 +56,23 @@ namespace TimeTrap.Managers
 
             LeanTween.alpha(sceneFader, 0, 0);
             LeanTween.alpha (sceneFader, 1, 0.5f).setOnComplete (() => {
-                Invoke ("LoadGame", 0.5f);
+                Invoke ("LoadCurrentGame", 0.5f);
             });
         }
         
-        private void LoadGame() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        private void OpenNextScene()
+        {
+            Time.timeScale = 1;
+            sceneFader.gameObject.SetActive (true);
+
+            LeanTween.alpha(sceneFader, 0, 0);
+            LeanTween.alpha (sceneFader, 1, 0.5f).setOnComplete (() => {
+                Invoke ("LoadNextGame", 0.5f);
+            });
+        }
+        
+        private void LoadCurrentGame() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        private void LoadNextGame() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         #endregion
 
