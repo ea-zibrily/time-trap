@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using TimeTrap.Enum;
 using TimeTrap.Puzzle;
 using TimeTrap.Managers;
 
