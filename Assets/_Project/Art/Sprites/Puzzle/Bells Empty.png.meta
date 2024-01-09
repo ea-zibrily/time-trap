@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 00e7f19d67845714b8df487d3d9e305c
+guid: 0c8303866b9bd8646ad3d95c1fc2d60f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 84
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 751af5f0ae97129449bdd95d1982d621
-      internalID: -669944236
+      spriteID: e7beaec815bfae1469491e673432520e
+      internalID: -1582596102
       vertices: []
       indices: 
       edges: []
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 753b726143ae0bb4d9e42db981fd688b
-      internalID: -525187602
+      spriteID: ed6733824ebccee4fabc66f0c9c44041
+      internalID: 2087081613
       vertices: []
       indices: 
       edges: []
@@ -205,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d67c888e40ad6741820b1b42b464fa9
-      internalID: -146292183
+      spriteID: a36a8ce78cbb04c49b674356b4db8b4e
+      internalID: 1061950980
       vertices: []
       indices: 
       edges: []
@@ -226,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6572930b322c41041ba04017fc4dd649
-      internalID: 1667869319
+      spriteID: 2991aca129ca651489cf77a4f2578cdd
+      internalID: -1267457489
       vertices: []
       indices: 
       edges: []
@@ -243,10 +243,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bells Empty_0: -669944236
-      Bells Empty_1: -525187602
-      Bells Empty_2: -146292183
-      Bells Empty_3: 1667869319
+      Bells Empty_0: -1582596102
+      Bells Empty_1: 2087081613
+      Bells Empty_2: 1061950980
+      Bells Empty_3: -1267457489
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

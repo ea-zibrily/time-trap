@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 13e466e3194e3b14bb041c00f686760d
+guid: 3354d32096045fe4a97e5343a535d66d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -152,19 +152,19 @@ TextureImporter:
       name: Jarum Jam_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 498
-        height: 386
+        x: 225
+        y: 140
+        width: 132
+        height: 133
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.15345521, y: 0.18061817}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 244c2c8b26cffa74181da3cfa1e0f0b4
-      internalID: -2028595937
+      spriteID: bc2d2d9410c13e94ca2a130083e3982e
+      internalID: 585301290
       vertices: []
       indices: 
       edges: []
@@ -173,19 +173,19 @@ TextureImporter:
       name: Jarum Jam_1
       rect:
         serializedVersion: 2
-        x: 498
-        y: 0
-        width: 498
-        height: 386
+        x: 718
+        y: 143
+        width: 154
+        height: 100
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.16786411, y: 0.20240693}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6165847b9ce25d44c83c248bde4c9445
-      internalID: -1808530730
+      spriteID: 1d22816b115548b4e8f902797c5c691a
+      internalID: 1143514157
       vertices: []
       indices: 
       edges: []
@@ -194,19 +194,19 @@ TextureImporter:
       name: Jarum Jam_2
       rect:
         serializedVersion: 2
-        x: 996
-        y: 0
-        width: 498
-        height: 386
+        x: 1215
+        y: 140
+        width: 167
+        height: 58
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.16587602, y: 0.40379596}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b42b50ef36be76941a1f1fb56d7d01d9
-      internalID: -638611281
+      spriteID: 4941ec856455c874cb0938d0fce6e2e9
+      internalID: -1467037471
       vertices: []
       indices: 
       edges: []
@@ -215,19 +215,19 @@ TextureImporter:
       name: Jarum Jam_3
       rect:
         serializedVersion: 2
-        x: 1494
-        y: 0
-        width: 498
-        height: 386
+        x: 1712
+        y: 140
+        width: 167
+        height: 41
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.1655193, y: 0.565142}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c6b381b03c14ed4d85d97deaa1383c8
-      internalID: -618381029
+      spriteID: 47ee93ba77a5b5d4c9062fba8c7aa2cc
+      internalID: 490647591
       vertices: []
       indices: 
       edges: []
@@ -236,19 +236,19 @@ TextureImporter:
       name: Jarum Jam_4
       rect:
         serializedVersion: 2
-        x: 1992
-        y: 0
-        width: 498
-        height: 386
+        x: 2213
+        y: 82
+        width: 146
+        height: 99
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.18151353, y: 0.8193868}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6966cf7c3124a524690fea9ef92c4941
-      internalID: -581716692
+      spriteID: 70a697c3ab1803a41857fa8e5e69b2a0
+      internalID: 1581013273
       vertices: []
       indices: 
       edges: []
@@ -257,19 +257,19 @@ TextureImporter:
       name: Jarum Jam_5
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 0
-        width: 498
-        height: 386
+        x: 2713
+        y: 34
+        width: 92
+        height: 154
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.24728526, y: 0.82609665}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af6d936a357e9a64880cb54094ca1c52
-      internalID: -1592012056
+      spriteID: 65fae586c3a36494cb50f9def0164299
+      internalID: 1636270465
       vertices: []
       indices: 
       edges: []
@@ -278,19 +278,19 @@ TextureImporter:
       name: Jarum Jam_6
       rect:
         serializedVersion: 2
-        x: 2988
-        y: 0
-        width: 498
-        height: 386
+        x: 3214
+        y: 20
+        width: 37
+        height: 171
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.57539326, y: 0.8263084}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dbcf8dceb918334c9d11aba4113cc20
-      internalID: -206605738
+      spriteID: c4e4504e7b1bbab429eb6b9700a9550f
+      internalID: 1627794649
       vertices: []
       indices: 
       edges: []
@@ -299,19 +299,19 @@ TextureImporter:
       name: Jarum Jam_7
       rect:
         serializedVersion: 2
-        x: 3486
-        y: 0
-        width: 498
-        height: 386
+        x: 3673
+        y: 34
+        width: 75
+        height: 150
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.7851921, y: 0.8533917}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d57824c5ceadb141aa9151061a320c6
-      internalID: 524937629
+      spriteID: df09cc84fc2bb324fb5cfc93fece187d
+      internalID: -102688062
       vertices: []
       indices: 
       edges: []
@@ -320,19 +320,19 @@ TextureImporter:
       name: Jarum Jam_8
       rect:
         serializedVersion: 2
-        x: 3984
-        y: 0
-        width: 498
-        height: 386
+        x: 4116
+        y: 116
+        width: 139
+        height: 68
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.8278334, y: 0.66411346}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8522f42707925404aa7fed7ca783a39d
-      internalID: 696905888
+      spriteID: 7b537479d5a2ca34293e21a86a40d254
+      internalID: 491128634
       vertices: []
       indices: 
       edges: []
@@ -341,19 +341,19 @@ TextureImporter:
       name: Jarum Jam_9
       rect:
         serializedVersion: 2
-        x: 4482
-        y: 0
-        width: 498
-        height: 386
+        x: 4606
+        y: 147
+        width: 150
+        height: 41
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.8223893, y: 0.34122375}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4de8160f6d437834ebe2f241131e4a50
-      internalID: 1727641717
+      spriteID: 32db983d0fae590468b46bb34197821e
+      internalID: 1629830013
       vertices: []
       indices: 
       edges: []
@@ -362,19 +362,19 @@ TextureImporter:
       name: Jarum Jam_10
       rect:
         serializedVersion: 2
-        x: 4980
-        y: 0
-        width: 498
-        height: 386
+        x: 5117
+        y: 147
+        width: 136
+        height: 89
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.8077105, y: 0.17607528}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7441f31964f098e4ab42d13a43dd9fff
-      internalID: 1925048595
+      spriteID: 68685babaedee2b408c3427bf55af107
+      internalID: 2095547419
       vertices: []
       indices: 
       edges: []
@@ -383,19 +383,19 @@ TextureImporter:
       name: Jarum Jam_11
       rect:
         serializedVersion: 2
-        x: 5478
-        y: 0
-        width: 498
-        height: 386
+        x: 5644
+        y: 140
+        width: 102
+        height: 144
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.800877, y: 0.17063268}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69f34ca33c2917a458d8b1d5cbd7f44b
-      internalID: -751241680
+      spriteID: 27df308db188bde4ba5b233307f2bffe
+      internalID: 1226801486
       vertices: []
       indices: 
       edges: []
@@ -404,19 +404,19 @@ TextureImporter:
       name: Jarum Jam_12
       rect:
         serializedVersion: 2
-        x: 5980
-        y: 0
-        width: 498
-        height: 386
+        x: 6203
+        y: 140
+        width: 40
+        height: 178
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.5232422, y: 0.12905352}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 889b6076a4cd5444399356e76761d9cc
-      internalID: -1584780445
+      spriteID: 1af336c53527a52428444ef87388cbe4
+      internalID: -882859485
       vertices: []
       indices: 
       edges: []
@@ -425,19 +425,19 @@ TextureImporter:
       name: Jarum Jam_13
       rect:
         serializedVersion: 2
-        x: 6470
-        y: 0
-        width: 498
-        height: 386
+        x: 6700
+        y: 137
+        width: 75
+        height: 174
       alignment: 9
-      pivot: {x: 0.49277106, y: 0.42046633}
+      pivot: {x: 0.24839193, y: 0.15054199}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad5ed964959ee1b40a8a17b6fd8d3920
-      internalID: 41832572
+      spriteID: d0b1c48b61d33834f830fa5d005896a7
+      internalID: 636134412
       vertices: []
       indices: 
       edges: []
@@ -453,20 +453,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jarum Jam_0: -2028595937
-      Jarum Jam_1: -1808530730
-      Jarum Jam_10: 1925048595
-      Jarum Jam_11: -751241680
-      Jarum Jam_12: -1584780445
-      Jarum Jam_13: 41832572
-      Jarum Jam_2: -638611281
-      Jarum Jam_3: -618381029
-      Jarum Jam_4: -581716692
-      Jarum Jam_5: -1592012056
-      Jarum Jam_6: -206605738
-      Jarum Jam_7: 524937629
-      Jarum Jam_8: 696905888
-      Jarum Jam_9: 1727641717
+      Jarum Jam_0: 585301290
+      Jarum Jam_1: 1143514157
+      Jarum Jam_10: 2095547419
+      Jarum Jam_11: 1226801486
+      Jarum Jam_12: -882859485
+      Jarum Jam_13: 636134412
+      Jarum Jam_2: -1467037471
+      Jarum Jam_3: 490647591
+      Jarum Jam_4: 1581013273
+      Jarum Jam_5: 1636270465
+      Jarum Jam_6: 1627794649
+      Jarum Jam_7: -102688062
+      Jarum Jam_8: 491128634
+      Jarum Jam_9: 1629830013
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

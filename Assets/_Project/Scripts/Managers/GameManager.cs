@@ -5,7 +5,6 @@ using MoreMountains.Feedbacks;
 using TimeTrap.Gameplay.EventHandler;
 using TimeTrap.DesignPattern.Singleton;
 using TimeTrap.Gameplay.Controller;
-using UnityEngine.Serialization;
 
 namespace TimeTrap.Managers
 {
@@ -22,10 +21,10 @@ namespace TimeTrap.Managers
         [SerializeField] private GameObject gameWinPanel;
         [SerializeField] private GameObject gameOverPanel;
 
-        private bool isWin;
+        private bool _isWin;
         
         [Header("Reference")] 
-        [SerializeField] private TimeController _timeController;
+        [SerializeField] private TimeController timeController;
 
         #endregion
 
@@ -66,7 +65,7 @@ namespace TimeTrap.Managers
         // Subscribe Event
         private void GameStart()
         {
-            _timeController.IsTimerStart = true;
+            timeController.IsTimerStart = true;
         }
         
         private void GameWin() => StartCoroutine(GameWinEnumerator());
@@ -75,7 +74,7 @@ namespace TimeTrap.Managers
         private IEnumerator GameWinEnumerator()
         {
             // GameLoseFeedbacks?.PlayFeedbacks();
-            _timeController.IsTimerStart = false;
+            timeController.IsTimerStart = false;
             PlayerPrefs.SetString("Over", "Win");
             yield return null;
         }
@@ -83,7 +82,7 @@ namespace TimeTrap.Managers
         private IEnumerator GameLoseEnumerator()
         {
             // GameWinFeedbacks?.PlayFeedbacks();
-            _timeController.IsTimerStart = false;
+            timeController.IsTimerStart = false;
             PlayerPrefs.SetString("Over", "Lose");
             yield return null;
         }

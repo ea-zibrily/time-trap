@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b9b20ef44da7d04fa9f1d9f62aa8d4b
+guid: 305a3f870f7b21045866ee9c40977943
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8092bfc45f50e7442a34ae846734f308
-      internalID: 900187369
+      spriteID: a3ae123ca05eb884990ef908de5d4b2f
+      internalID: 956906080
       vertices: []
       indices: 
       edges: []
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 061fd36dc8f49054386e920870e3a2c3
-      internalID: 397042804
+      spriteID: f43bd1bd6a74a7c4593a89ca2b8b9e6e
+      internalID: -1509841194
       vertices: []
       indices: 
       edges: []
@@ -205,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 399379ce3ec9ab344994f23d67c2568b
-      internalID: -89084634
+      spriteID: 65168685646333e4db8a445526d6f24a
+      internalID: -1690098141
       vertices: []
       indices: 
       edges: []
@@ -226,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 466682de2756e3841a1aa978d564b58b
-      internalID: 735074974
+      spriteID: 7ab8175c8b0df9349a2e0e375c6bb08c
+      internalID: -1045635021
       vertices: []
       indices: 
       edges: []
@@ -243,10 +243,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Gear Roll_0: 900187369
-      Gear Roll_1: 397042804
-      Gear Roll_2: -89084634
-      Gear Roll_3: 735074974
+      Gear Roll_0: 956906080
+      Gear Roll_1: -1509841194
+      Gear Roll_2: -1690098141
+      Gear Roll_3: -1045635021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
